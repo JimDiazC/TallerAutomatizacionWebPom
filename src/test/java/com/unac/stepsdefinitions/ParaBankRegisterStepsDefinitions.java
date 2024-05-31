@@ -28,13 +28,13 @@ public class ParaBankRegisterStepsDefinitions {
 
     @When("ingreso a la opcion de Register")
     public void ingreso_a_la_opcion_de_register() {
-        // Write code here that turns the phrase above into concrete actions
+        
         homePage.clickRegister();
     }
 
     @When("ingreso los siguientes datos para mi registro: First Name: {string}, Last Name: {string}, Address: {string}, City: {string}, State: {string}, Zip Code: {string}, Phone: {string}, SSN: {string}, Username: {string}, Password: {string}, Confirm: {string}")
     public void ingreso_los_siguientes_datos_para_mi_registro_first_name_last_name_address_city_state_zip_code_phone_ssn_username_password_confirm(String strFirstName, String strLastName, String strAddress, String strCity, String strState, String strZipCode, String strPhoneNumber, String strSSN, String strUsername, String strPassword, String strConfirmPassword) {
-        // Write code here that turns the phrase above into concrete actions
+        
         registerPage.register(strFirstName, strLastName, strAddress, strCity, strState, strZipCode, strPhoneNumber, strSSN, strUsername, strPassword, strConfirmPassword);
     }
 
@@ -79,7 +79,7 @@ public class ParaBankRegisterStepsDefinitions {
     }
 
     private void waitUntilAccountNumberIsAvailable() {
-        // Espera 5 segundos para dar tiempo a que se genere el número de cuenta
+        
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
